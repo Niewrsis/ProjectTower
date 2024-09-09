@@ -2533,6 +2533,7 @@ GameObject:
   - component: {fileID: 528313147}
   - component: {fileID: 528313148}
   - component: {fileID: 528313149}
+  - component: {fileID: 528313150}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -2602,6 +2603,20 @@ MonoBehaviour:
   _enemiesPerSecond: 0.5
   _timeBetweenWaves: 5
   _difficultyScalingFactor: 0.75
+--- !u!114 &528313150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528313146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef544c0a1dbebb340afaa5cf0ad3a28b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _towerPrefabs:
+  - {fileID: 6800148253547200744, guid: 234639ecaf3affd4c803786883fd575b, type: 3}
 --- !u!1001 &532726432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8245,63 +8260,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4892318603919693236, guid: 00f4fcf4c23b64b41afab627d54d66b9, type: 3}
   m_PrefabInstance: {fileID: 1410523004346536722}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &3418183785582750578
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 86361635436513628, guid: 234639ecaf3affd4c803786883fd575b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 86361635436513628, guid: 234639ecaf3affd4c803786883fd575b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 86361635436513628, guid: 234639ecaf3affd4c803786883fd575b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 86361635436513628, guid: 234639ecaf3affd4c803786883fd575b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 86361635436513628, guid: 234639ecaf3affd4c803786883fd575b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 86361635436513628, guid: 234639ecaf3affd4c803786883fd575b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 86361635436513628, guid: 234639ecaf3affd4c803786883fd575b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 86361635436513628, guid: 234639ecaf3affd4c803786883fd575b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 86361635436513628, guid: 234639ecaf3affd4c803786883fd575b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 86361635436513628, guid: 234639ecaf3affd4c803786883fd575b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6800148253547200744, guid: 234639ecaf3affd4c803786883fd575b, type: 3}
-      propertyPath: m_Name
-      value: Turret
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 234639ecaf3affd4c803786883fd575b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -8312,4 +8270,3 @@ SceneRoots:
   - {fileID: 701085440}
   - {fileID: 1543633461}
   - {fileID: 635264330}
-  - {fileID: 3418183785582750578}
