@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2669469443045704134}
   - component: {fileID: 4753440317987069535}
   m_Layer: 6
-  m_Name: Enemy
+  m_Name: TankEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.08387861, g: 0.4528302, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 3225633833782549872}
-  _moveSpeed: 2
+  _moveSpeed: 1
 --- !u!114 &4753440317987069535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,4 +176,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8433f9ac8d81d4047921b9bf9de6aa59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hitPoints: 2
+  HitPoints: 4
+  _moneyWorth: 100

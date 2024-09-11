@@ -10,11 +10,13 @@ public class EnemyMovement : MonoBehaviour
     [Header("Attributes")]
     [SerializeField] private float _moveSpeed = 2f;
 
+    private float _baseSpeed;
     private Transform _target;
     private int _pathIndex = 0;
 
     private void Start()
     {
+        _baseSpeed = _moveSpeed;
         _target = LevelManager.main.path[_pathIndex];
     }
 
@@ -41,5 +43,14 @@ public class EnemyMovement : MonoBehaviour
         Vector2 direction = (_target.position - transform.position).normalized;
 
         _rb.velocity = direction * _moveSpeed;
+    }
+
+    public void UpdateSpeed(float newSpeed)
+    {
+        _moveSpeed *= newSpeed;
+    }
+    public void ResetSpeed()
+    {
+        _moveSpeed = _baseSpeed;
     }
 }

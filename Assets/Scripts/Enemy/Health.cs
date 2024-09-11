@@ -5,15 +5,15 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [Header("Attributes")]
-    [SerializeField] private int _hitPoints = 2;
-    [SerializeField] private int _moneyWorth = 50;
+    public int HitPoints = 2;
+    public int _moneyWorth = 50;
 
     private bool _isDestroyed = false;
     public void TakeDamge(int damage)
     {
-        _hitPoints -= damage;
+        HitPoints -= damage;
 
-        if ( _hitPoints <= 0 && !_isDestroyed)
+        if (HitPoints <= 0 && !_isDestroyed)
         {
             EnemySpawner.onEnemyDestroy.Invoke();
             LevelManager.main.IncreaseMoney(_moneyWorth);
