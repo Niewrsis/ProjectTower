@@ -3192,6 +3192,7 @@ GameObject:
   - component: {fileID: 528313148}
   - component: {fileID: 528313149}
   - component: {fileID: 528313150}
+  - component: {fileID: 528313151}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -3265,6 +3266,7 @@ MonoBehaviour:
   enemiesPerSecond: 0.5
   timeBetweenWaves: 5
   difficultyScalingFactor: 0.75
+  enemiesPerSecondCap: 15
 --- !u!114 &528313150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3287,6 +3289,18 @@ MonoBehaviour:
   - Name: Slowmo Tower
     Cost: 250
     Prefab: {fileID: 6800148253547200744, guid: 4aa4c719be341df45b4a7d594e61770f, type: 3}
+--- !u!114 &528313151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528313146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2403f8d1f9e1d4d9b6014431ee6e68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &532726432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3510,7 +3524,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 000000002fd9b05f172f223a
+  m_ApplyToSortingLayers: 000000002fd9b05f172f223adb238dc1
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
