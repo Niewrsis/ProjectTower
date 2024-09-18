@@ -8,7 +8,6 @@ using UnityEngine.EventSystems;
 public class Menu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [Header("References")]
-    [SerializeField] private TextMeshProUGUI _moneyUI;
     [SerializeField] private Animator _anim;
 
     private bool _isMenuOpen = true;
@@ -17,11 +16,6 @@ public class Menu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         _isMenuOpen = !_isMenuOpen;
         _anim.SetBool("MenuOpen", _isMenuOpen);
-    }
-
-    private void OnGUI()
-    {
-        _moneyUI.text = LevelManager.main.Money.ToString();
     }
 
     public void OnPointerEnter(PointerEventData eventData)

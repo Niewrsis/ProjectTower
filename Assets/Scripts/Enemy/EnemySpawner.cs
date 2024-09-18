@@ -19,12 +19,18 @@ public class EnemySpawner : MonoBehaviour
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
 
+    private const int MAX_WAVE = 15;
     private int _currentWave = 1;
     private float _timeSinceLastSpawn;
     private int _enemiesAlive;
     private int _enemiesLeftToSpawn;
     private bool _isSpawning = false;
     private float _enemiesPerSecond;
+
+    public int GetCurrentWave()
+    {
+        return _currentWave;
+    }
 
     private void Awake()
     {
@@ -58,6 +64,7 @@ public class EnemySpawner : MonoBehaviour
         _enemiesAlive--;
     }
     private IEnumerator StartWave() {
+        if (_currentWave >= MAX_WAVE) yield return null;
         yield return new WaitForSeconds(timeBetweenWaves);
         _isSpawning = true;
         _enemiesLeftToSpawn = baseEnemies;
