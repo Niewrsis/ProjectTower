@@ -5,20 +5,30 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [Header("Attributes")]
-    public int HitPoints = 2;
+    public int MaxHealth = 20;
     public int _moneyWorth = 50;
 
+    private int _currentHealth;
     private bool _isDestroyed = false;
+    private void Start()
+    {
+        _currentHealth = MaxHealth;
+    }
     public void TakeDamge(int damage)
     {
-        HitPoints -= damage;
+        _currentHealth -= damage;
 
-        if (HitPoints <= 0 && !_isDestroyed)
+        if (_currentHealth <= 0 && !_isDestroyed)
         {
             EnemySpawner.onEnemyDestroy.Invoke();
             LevelManager.main.IncreaseMoney(_moneyWorth);
             _isDestroyed = true;
             Destroy(gameObject);
         }
+    }
+    public void EnemyPassed()
+    {
+        BaseHealth.main.TakeBaseDamage(_currentHealth);
+        Destroy(gameObject);
     }
 }

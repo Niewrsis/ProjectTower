@@ -7,13 +7,19 @@ public class Plots : MonoBehaviour
     [Header("References")]
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private Color _hoverColor;
+    [SerializeField] private GameObject _uiTowerChooser;
 
-    public GameObject TowerObj;
-    public Turret Turret;
+    //public GameObject TowerObj;
+    //public Turret Turret;
     private Color _startColor;
     private void Start()
     {
         _startColor = _spriteRenderer.color;
+        _uiTowerChooser.SetActive(false);
+    }
+    public void ChooserActivation()
+    {
+
     }
 
     private void OnMouseEnter()
@@ -26,7 +32,8 @@ public class Plots : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if (UIManager.main.IsHoveringUI()) return;
+        _uiTowerChooser.SetActive(true);
+        /*if (UIManager.main.IsHoveringUI()) return;
 
         if (TowerObj != null)
         {
@@ -43,5 +50,6 @@ public class Plots : MonoBehaviour
         TowerObj = Instantiate(towerToBuild.Prefab, transform.position, Quaternion.identity);
 
         Turret = TowerObj.GetComponent<Turret>();
+        */
     }
 }

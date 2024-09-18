@@ -28,9 +28,8 @@ public class EnemyMovement : MonoBehaviour
 
             if (_pathIndex == LevelManager.main.path.Length)
             {
-                EnemySpawner.onEnemyDestroy.Invoke();
-                Destroy(gameObject);
-                return;
+                EnemySpawner.onEnemyDestroy?.Invoke();
+                GetComponent<Health>().EnemyPassed();
             }
             else
             {
