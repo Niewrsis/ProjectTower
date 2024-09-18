@@ -9,6 +9,36 @@ EditorBuildSettings:
     path: Assets/_Presentation/Scenes/StartingScene.unity
     guid: a0e9bb1fc2dd0894287963082c48ebab
   - enabled: 1
+    path: Assets/_Presentation/Scenes/LocationChoosingScene.unity
+    guid: 90068a1c87e54e848bd35a71dc255298
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/Locations/KitchenLocationScene.unity
+    guid: 1abbd0cc28164ea449546fa7bcc5cbd1
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/Locations/StorageLocationScene.unity
+    guid: a716f2720d673994780f31752ae4924c
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/ShopScene.unity
+    guid: 982324791604f30449fb6d1486e3897c
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/InventoryScene.unity
+    guid: 57558369bfa8b68428f57f7b38584695
+  - enabled: 1
     path: Assets/_Presentation/Scenes/Levels/Level1Scene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/Levels/Level2Scene.unity
+    guid: f68054afccf72214c84819043135f249
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/Levels/Level3Scene.unity
+    guid: 1378701d570da9b4f9e239d830db523e
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/Levels/Level4Scene.unity
+    guid: 3ce39e5ad10d4d646a40d306378b5f96
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/Levels/Level5Scene.unity
+    guid: b3e041bbc54d40742bf3a9832ae549c1
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/Levels/Level6Scene.unity
+    guid: 516012f2d0e65104bbdf7ab2bbf47fe6
   m_configObjects: {}

@@ -1742,7 +1742,7 @@ MonoBehaviour:
   _quitButton: {fileID: 726358515}
   _masterVolumeSlider: {fileID: 546855514}
   _masterVolumePercentText: {fileID: 504508519}
-  _settingsObj: {fileID: 0}
+  _settingsObj: {fileID: 1229052273}
 --- !u!4 &1229632953
 Transform:
   m_ObjectHideFlags: 0
