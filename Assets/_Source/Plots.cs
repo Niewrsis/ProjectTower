@@ -9,17 +9,12 @@ public class Plots : MonoBehaviour
     [SerializeField] private Color _hoverColor;
     [SerializeField] private GameObject _uiTowerChooser;
 
-    //public GameObject TowerObj;
-    //public Turret Turret;
+    private bool _isPlotBusy = false;
     private Color _startColor;
     private void Start()
     {
         _startColor = _spriteRenderer.color;
         _uiTowerChooser.SetActive(false);
-    }
-    public void ChooserActivation()
-    {
-
     }
 
     private void OnMouseEnter()
@@ -32,24 +27,17 @@ public class Plots : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        _uiTowerChooser.SetActive(true);
-        /*if (UIManager.main.IsHoveringUI()) return;
-
-        if (TowerObj != null)
+        if (_isPlotBusy == false)
         {
-            Turret.OpenUpgradeUI();
-            return;
+            _uiTowerChooser.SetActive(true);
         }
-
-        Tower towerToBuild = BuildManager.main.GetSelectedTower();
-
-        if (towerToBuild.Cost > LevelManager.main.Money) return;
-
-        LevelManager.main.SpendMoney(towerToBuild.Cost);
-        
-        TowerObj = Instantiate(towerToBuild.Prefab, transform.position, Quaternion.identity);
-
-        Turret = TowerObj.GetComponent<Turret>();
-        */
+        else
+        {
+            //upgrade logic
+        }
+    }
+    public void ChangeToPlotBusy()
+    {
+        _isPlotBusy = true;
     }
 }

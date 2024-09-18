@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6508732667275949600}
   - component: {fileID: 1781408775542803155}
   - component: {fileID: 1631892569843386087}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,8 @@ GameObject:
   - component: {fileID: 8193674175491262801}
   - component: {fileID: 5501017005930373312}
   - component: {fileID: 7065215416054438573}
-  m_Layer: 0
+  - component: {fileID: 261955285287849938}
+  m_Layer: 5
   m_Name: Slot 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,6 +214,50 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &261955285287849938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008058554766756354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 7065215416054438573}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1478542018349104203
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,7 +269,7 @@ GameObject:
   - component: {fileID: 7764576721543321377}
   - component: {fileID: 8384756950963045217}
   - component: {fileID: 2848764874009796864}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TowerImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +346,7 @@ GameObject:
   - component: {fileID: 6336993718384409530}
   - component: {fileID: 1281461881944833626}
   - component: {fileID: 5219448289225168725}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PlaceUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,7 +394,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1047714853
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &6336993718384409530
@@ -404,6 +449,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d2d7c272ff2a6b4698f624e4f85b08a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _slot1: {fileID: 8703344881202227719}
+  _slot2: {fileID: 1306380377619693615}
+  _slot3: {fileID: 1590671843198002826}
+  _slot4: {fileID: 261955285287849938}
+  _towersImages:
+  - {fileID: 2848764874009796864}
+  - {fileID: 8420258427863694017}
+  - {fileID: 1447285645294059250}
+  - {fileID: 3706833902090381755}
+  _towersCost:
+  - {fileID: 7154627647881754571}
+  - {fileID: 6564964580359167433}
+  - {fileID: 1368353218190793032}
+  - {fileID: 1631892569843386087}
 --- !u!1 &2815527379759214579
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +474,7 @@ GameObject:
   - component: {fileID: 5835989456004179418}
   - component: {fileID: 6284704028543937702}
   - component: {fileID: 2295058793395108548}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Backgorund
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -490,7 +549,7 @@ GameObject:
   - component: {fileID: 1429350198070743029}
   - component: {fileID: 7888651061683845353}
   - component: {fileID: 7154627647881754571}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -626,7 +685,7 @@ GameObject:
   - component: {fileID: 1207418789798748473}
   - component: {fileID: 7753671442053433660}
   - component: {fileID: 1447285645294059250}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TowerImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -699,7 +758,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3827604517561435419}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Slots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -740,7 +799,8 @@ GameObject:
   - component: {fileID: 7451232474443990592}
   - component: {fileID: 7936524170672457431}
   - component: {fileID: 3402430026584370037}
-  m_Layer: 0
+  - component: {fileID: 1306380377619693615}
+  m_Layer: 5
   m_Name: Slot 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -806,6 +866,50 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1306380377619693615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3912031095767199916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 3402430026584370037}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4279676530502775500
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,7 +921,7 @@ GameObject:
   - component: {fileID: 4775195307316329421}
   - component: {fileID: 7022807976119791509}
   - component: {fileID: 3706833902090381755}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TowerImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -892,7 +996,8 @@ GameObject:
   - component: {fileID: 326936414572963204}
   - component: {fileID: 8074242472260543609}
   - component: {fileID: 2098777219316806183}
-  m_Layer: 0
+  - component: {fileID: 8703344881202227719}
+  m_Layer: 5
   m_Name: Slot 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -958,6 +1063,50 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8703344881202227719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5682705511287932123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2098777219316806183}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6655810811531189604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,7 +1265,7 @@ GameObject:
   - component: {fileID: 8329151736361711241}
   - component: {fileID: 7231948322284245290}
   - component: {fileID: 8420258427863694017}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: TowerImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1191,7 +1340,8 @@ GameObject:
   - component: {fileID: 599844635693826139}
   - component: {fileID: 6870414491262316271}
   - component: {fileID: 4268593536203976336}
-  m_Layer: 0
+  - component: {fileID: 1590671843198002826}
+  m_Layer: 5
   m_Name: Slot 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1257,6 +1407,50 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1590671843198002826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7238607528630621750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 4268593536203976336}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7456664321887168267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,7 +1462,7 @@ GameObject:
   - component: {fileID: 2995877867726529890}
   - component: {fileID: 8982956355327634967}
   - component: {fileID: 1368353218190793032}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1404,7 +1598,7 @@ GameObject:
   - component: {fileID: 934688150174913863}
   - component: {fileID: 2538013490405507270}
   - component: {fileID: 6564964580359167433}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}

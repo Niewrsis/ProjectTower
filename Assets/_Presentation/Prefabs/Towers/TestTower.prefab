@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 86361635436513628}
   - component: {fileID: 273398332449367300}
   m_Layer: 0
-  m_Name: SniperTower
+  m_Name: TestTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
