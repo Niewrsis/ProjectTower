@@ -13,9 +13,6 @@ public class BaseHealth : MonoBehaviour
     private void Awake()
     {
         main = this;
-    }
-    private void Start()
-    {
         _currentHealt = _maxHealth;
     }
 

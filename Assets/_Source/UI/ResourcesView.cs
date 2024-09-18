@@ -12,7 +12,7 @@ public class ResourcesView : MonoBehaviour
     private void OnGUI()
     {
         _moneyText.text = LevelManager.main.Money.ToString();
-        _waveText.text = _currentWave.GetCurrentWave().ToString();
+        _waveText.text = $"{ _currentWave.GetCurrentWave().ToString()}/{_currentWave.GetMaximumWaves().ToString()}";
         _baseHealth.text = BaseHealth.main.GetCurrentBaseHealth().ToString();
     }
 }

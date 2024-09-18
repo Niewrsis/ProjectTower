@@ -15,11 +15,11 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float timeBetweenWaves = 5f;
     [SerializeField] private float difficultyScalingFactor = .75f;
     [SerializeField] private float enemiesPerSecondCap = 15f;
+    [SerializeField] private int _maximumWaves;
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
 
-    private const int MAX_WAVE = 15;
     private int _currentWave = 1;
     private float _timeSinceLastSpawn;
     private int _enemiesAlive;
@@ -31,7 +31,10 @@ public class EnemySpawner : MonoBehaviour
     {
         return _currentWave;
     }
-
+    public int GetMaximumWaves()
+    {
+        return _maximumWaves;
+    }
     private void Awake()
     {
         onEnemyDestroy.AddListener(EnemyDestroyed);
@@ -64,7 +67,7 @@ public class EnemySpawner : MonoBehaviour
         _enemiesAlive--;
     }
     private IEnumerator StartWave() {
-        if (_currentWave >= MAX_WAVE) yield return null;
+        if (_currentWave >= _maximumWaves) yield return null;
         yield return new WaitForSeconds(timeBetweenWaves);
         _isSpawning = true;
         _enemiesLeftToSpawn = baseEnemies;
