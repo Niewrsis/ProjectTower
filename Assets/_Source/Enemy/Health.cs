@@ -5,10 +5,10 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [Header("Attributes")]
-    public int MaxHealth = 20;
+    public float MaxHealth = 20;
     public int _moneyWorth = 50;
 
-    private int _currentHealth;
+    private float _currentHealth;
     private bool _isDestroyed = false;
     private void Start()
     {
@@ -30,5 +30,9 @@ public class Health : MonoBehaviour
     {
         BaseHealth.main.TakeBaseDamage(_currentHealth);
         Destroy(gameObject);
+    }
+    public float GetCurrentHealth()
+    {
+        return _currentHealth;
     }
 }
