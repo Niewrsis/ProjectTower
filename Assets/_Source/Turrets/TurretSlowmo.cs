@@ -52,9 +52,9 @@ public class TurretSlowmo : MonoBehaviour
 
         em.ResetSpeed();
     }
-    private void OnDrawGizmosSelected()
+    /*private void OnDrawGizmosSelected()
     {
         Handles.color = Color.cyan;
         Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
-    }
+    }*/
 }
