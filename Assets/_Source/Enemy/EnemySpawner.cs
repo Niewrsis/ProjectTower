@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameObject[] _enemyPrefabs;
+    [SerializeField] private TextMeshProUGUI _nextWaveSecText;
 
     [Header("Attributes")]
     [SerializeField] private int baseEnemies = 8;
@@ -68,7 +70,12 @@ public class EnemySpawner : MonoBehaviour
     }
     private IEnumerator StartWave() {
         if (_currentWave >= _maximumWaves) yield return null;
-        yield return new WaitForSeconds(timeBetweenWaves);
+        for (int i = (int)timeBetweenWaves; i >= 0; i--)
+        {
+            _nextWaveSecText.text = "Wave starts in " + i + "...";
+            yield return new WaitForSeconds(1);
+        }
+        _nextWaveSecText.text = "";
         _isSpawning = true;
         _enemiesLeftToSpawn = baseEnemies;
         _enemiesPerSecond = EnemiesPerSecond();

@@ -3501,6 +3501,7 @@ MonoBehaviour:
   - {fileID: 6130621572779671777, guid: 3467c83ab7011e8419f810edeb65f30f, type: 3}
   - {fileID: 6130621572779671777, guid: 3467c83ab7011e8419f810edeb65f30f, type: 3}
   - {fileID: 6130621572779671777, guid: 4a274884fee98c94da9a5f87d8ccb47b, type: 3}
+  _nextWaveSecText: {fileID: 1494352052}
   baseEnemies: 8
   enemiesPerSecond: 0.5
   timeBetweenWaves: 5
@@ -7854,7 +7855,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Next wave in N...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
