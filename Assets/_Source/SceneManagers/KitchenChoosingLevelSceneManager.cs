@@ -8,13 +8,19 @@ public class KitchenChoosingLevelSceneManager : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Button _level1Button;
-    [SerializeField] private Button _level2Button, _level3Button;
+    [SerializeField] private Button _level2Button, _level3Button, _backButton;
 
     private void Start()
     {
+        _backButton.onClick.AddListener(BackToLocationChooser);
+
         _level1Button.onClick.AddListener(onClickLevel1);
         _level2Button.onClick.AddListener(onClickLevel2);
         _level3Button.onClick.AddListener(onClickLevel3);
+    }
+    private void BackToLocationChooser()
+    {
+        SceneManager.LoadScene(1);
     }
     private void onClickLevel1()
     {
