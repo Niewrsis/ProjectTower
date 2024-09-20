@@ -52,7 +52,7 @@ public class EndGameScreen : MonoBehaviour
     private void onBack()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(_currentLevel < 3 ? 2 : 3);
+        SceneManager.LoadScene(_currentLevel <= 3 ? 2 : 3);
         Destroy(gameObject);
     }
 }
