@@ -1663,7 +1663,7 @@ MonoBehaviour:
   - {fileID: 234607701}
   - {fileID: 755250081}
   - {fileID: 1490877595}
-  Money: 0
+  Money: 100
 --- !u!114 &528313149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1688,7 +1688,7 @@ MonoBehaviour:
   timeBetweenWaves: 5
   difficultyScalingFactor: 0.75
   enemiesPerSecondCap: 15
-  _maximumWaves: 2
+  _maximumWaves: 10
 --- !u!114 &528313150
 MonoBehaviour:
   m_ObjectHideFlags: 0

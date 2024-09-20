@@ -18,7 +18,6 @@ public class LevelManager : MonoBehaviour
     }
     private void Start()
     {
-        Money = 100;
         CurrentGameState = GameState.InGame;
     }
     public void IncreaseMoney(int amount)

@@ -1313,7 +1313,7 @@ MonoBehaviour:
   - {fileID: 1736956978}
   - {fileID: 1020825909}
   - {fileID: 1490877595}
-  Money: 0
+  Money: 500
 --- !u!114 &528313149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1333,10 +1333,10 @@ MonoBehaviour:
   - {fileID: 6130621572779671777, guid: 4a274884fee98c94da9a5f87d8ccb47b, type: 3}
   _nextWaveSecText: {fileID: 1589396019}
   _endGameScreenPrefab: {fileID: 3966546710477338811, guid: aeb6fb6afb6c57a4297bd30fb6403893, type: 3}
-  baseEnemies: 8
-  enemiesPerSecond: 0.5
+  baseEnemies: 15
+  enemiesPerSecond: 0.65
   timeBetweenWaves: 5
-  difficultyScalingFactor: 0.75
+  difficultyScalingFactor: 0.85
   enemiesPerSecondCap: 15
   _maximumWaves: 10
 --- !u!114 &528313150
