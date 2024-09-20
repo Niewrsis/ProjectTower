@@ -11,8 +11,8 @@ public class Turret : MonoBehaviour
     [SerializeField] private LayerMask enemyMask;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firingPoint;
-    [SerializeField] private GameObject upgradeUI;
-    [SerializeField] private Button upgradeButton;
+    //[SerializeField] private GameObject upgradeUI;
+    //[SerializeField] private Button upgradeButton;
 
     [Header("Attribute")]
     [SerializeField] private float targetingRange = 5f;
@@ -33,7 +33,7 @@ public class Turret : MonoBehaviour
         _attackPerSecondBase = attackPerSecond;
         _targetingRangeBase = targetingRange;
 
-        upgradeButton.onClick.AddListener(Upgrade);
+        //upgradeButton.onClick.AddListener(Upgrade);
     }
     private void Update()
     {
@@ -86,7 +86,7 @@ public class Turret : MonoBehaviour
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0f,0f,angle));
         turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
-    public void OpenUpgradeUI()
+    /*public void OpenUpgradeUI()
     {
         upgradeUI.SetActive(true);
     }
@@ -106,7 +106,7 @@ public class Turret : MonoBehaviour
         targetingRange = CaluclateRange();
 
         CloseUpgradeUI();
-    }
+    }*/
     private int CalculateCost()
     {
         return Mathf.RoundToInt(baseUpgradeCost * Mathf.Pow(_level, .8f));

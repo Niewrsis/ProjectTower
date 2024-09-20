@@ -7,6 +7,7 @@ public class LocationChoosingSceneManager : MonoBehaviour
     [SerializeField] private Button _kitchenLocationButton, _storageLocationButton, _shopButton, _inventoryButton;
     [SerializeField] private Image _storageSprite;
     [SerializeField] private Color _blockedColor;
+    [SerializeField] private GameObject _warrningStorageText;
 
     private Color _baseColor;
 
@@ -20,12 +21,13 @@ public class LocationChoosingSceneManager : MonoBehaviour
         }
         else
         {
+            _warrningStorageText.SetActive(false);
             _storageSprite.color = _baseColor;
         }
         _kitchenLocationButton.onClick.AddListener(OpenKitchenScene);
         _storageLocationButton.onClick.AddListener(OpenStorageScene);
-        _shopButton.onClick.AddListener(OpenShop);
-        _inventoryButton.onClick.AddListener(OpenInventory);
+        //_shopButton.onClick.AddListener(OpenShop);
+        //_inventoryButton.onClick.AddListener(OpenInventory);
     }
     private void OpenKitchenScene()
     {

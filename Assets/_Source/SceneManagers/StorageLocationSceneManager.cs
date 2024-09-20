@@ -13,8 +13,8 @@ public class StorageLocationSceneManager : MonoBehaviour
         _backButton.onClick.AddListener(BackToLocationChooser);
 
         _level4Button.onClick.AddListener(onClickLevel4);
-        _level5Button.onClick.AddListener(onClickLevel5);
-        _level6Button.onClick.AddListener(onClickLevel6);
+        //_level5Button.onClick.AddListener(onClickLevel5);
+        //_level6Button.onClick.AddListener(onClickLevel6);
     }
     private void BackToLocationChooser()
     {
