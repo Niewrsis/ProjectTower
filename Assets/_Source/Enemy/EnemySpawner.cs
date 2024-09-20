@@ -78,7 +78,7 @@ public class EnemySpawner : MonoBehaviour
         }
         _nextWaveSecText.text = "";
         _isSpawning = true;
-        _enemiesLeftToSpawn = baseEnemies;
+        _enemiesLeftToSpawn = EnemiesPerWave();
         _enemiesPerSecond = EnemiesPerSecond();
     }
     private void EndWave()
