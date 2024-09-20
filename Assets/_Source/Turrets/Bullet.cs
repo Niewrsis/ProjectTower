@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,16 @@ public class Bullet : MonoBehaviour
     [SerializeField] private int _bulletDamage = 1;
 
     private Transform _target;
+    private void Start()
+    {
+        StartCoroutine(DestroyAfterStart());
+    }
+
+    private IEnumerator DestroyAfterStart()
+    {
+        yield return new WaitForSeconds(3);
+        Destroy(gameObject);
+    }
 
     public void SetTarget(Transform target)
     {
