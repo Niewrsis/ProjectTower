@@ -31,6 +31,7 @@ public class KitchenChoosingLevelSceneManager : MonoBehaviour
     }
     private void onClickLevel2()
     {
+        Debug.Log("Preesed " + PlayerPrefs.GetInt("level_index"));
         if (PlayerPrefs.GetInt("level_index") >= 2)
         {
             SceneManager.LoadScene(7);

@@ -15,10 +15,12 @@ public class PauseMenuUI : MonoBehaviour
     }
     public void OnQuitKitchen()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(2);
     }
     public void OnQuitStorage()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(3);
     }
 }

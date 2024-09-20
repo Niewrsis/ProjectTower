@@ -3759,6 +3759,7 @@ MonoBehaviour:
   - {fileID: 6130621572779671777, guid: 3467c83ab7011e8419f810edeb65f30f, type: 3}
   - {fileID: 6130621572779671777, guid: 4a274884fee98c94da9a5f87d8ccb47b, type: 3}
   _nextWaveSecText: {fileID: 832338231}
+  _endGameScreenPrefab: {fileID: 3966546710477338811, guid: aeb6fb6afb6c57a4297bd30fb6403893, type: 3}
   baseEnemies: 8
   enemiesPerSecond: 0.5
   timeBetweenWaves: 5
@@ -3802,6 +3803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a5afbd9848bdf442b0d20dd60a14a04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _endGamePrefab: {fileID: 3966546710477338811, guid: aeb6fb6afb6c57a4297bd30fb6403893, type: 3}
   _maxHealth: 100
 --- !u!1001 &532726432
 PrefabInstance:

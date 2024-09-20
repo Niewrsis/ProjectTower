@@ -10,6 +10,7 @@ public class EnemySpawner : MonoBehaviour
     [Header("References")]
     [SerializeField] private GameObject[] _enemyPrefabs;
     [SerializeField] private TextMeshProUGUI _nextWaveSecText;
+    [SerializeField] private GameObject _endGameScreenPrefab;
 
     [Header("Attributes")]
     [SerializeField] private int baseEnemies = 8;
@@ -85,7 +86,17 @@ public class EnemySpawner : MonoBehaviour
         _isSpawning = false;
         _timeSinceLastSpawn = 0;
         _currentWave++;
+        if (_currentWave >= _maximumWaves)
+        {
+            EndGameScreen();
+            return;
+        }
         StartCoroutine(StartWave());
+    }
+    private void EndGameScreen()
+    {
+        LevelManager.CurrentGameState = GameState.Win;
+        Instantiate(_endGameScreenPrefab, transform.parent);
     }
     private void SpawnEnemy()
     {

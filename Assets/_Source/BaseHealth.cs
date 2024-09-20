@@ -5,6 +5,8 @@ using UnityEngine.Events;
 public class BaseHealth : MonoBehaviour
 {
     public static BaseHealth main;
+    [Header("References")]
+    [SerializeField] private GameObject _endGamePrefab;
 
     [Header("Attributes")]
     [SerializeField] private float _maxHealth;
@@ -21,7 +23,8 @@ public class BaseHealth : MonoBehaviour
         _currentHealt -= damage;
         if(_currentHealt <= 0)
         {
-            //Game Over Logic
+            LevelManager.CurrentGameState = GameState.Lose;
+            Instantiate(_endGamePrefab, transform.parent);
         }
     }
     public float GetCurrentBaseHealth()
